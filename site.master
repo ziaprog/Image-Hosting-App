@@ -1,0 +1,57 @@
+<%@ Master Language="C#" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+        <script type ="text/javascript" >
+    function message()
+    {
+    setTimeout ("document.getElementById ('Message').style.display ='block';",500);
+    }
+    </script>
+
+     
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <div id="container">
+    <div id="header">
+       <div id="logo">
+         <img src="css/logo.jpg" style="position: relative"  /></div> 
+<div id="button">
+    <img src="css/upload-button.jpg" style="position: relative" /></div>
+       
+       <div id="navigation">
+  <ul class="nav-links">
+    <li><a href="Default.aspx">Upload Image</a></li>
+    <li><a href="gallery.aspx">Gallery</a></li>
+    <li><a href="#">Terms &amp; conditions </a></li>
+    <li><a href="#">contact us</a></li>
+  </ul>
+   </div>
+
+        </div>
+     
+     <div id="content">
+         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+         </asp:ContentPlaceHolder>
+     </div>
+   <div id="footer">Copyright ©2009 Photo Tube </div>
+     
+                   </div>
+    </div>
+    </form>
+</body>
+</html>
